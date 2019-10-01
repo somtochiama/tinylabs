@@ -22,6 +22,9 @@
         <th></th>
       </tr>
       <tableRow />
+      <tableRow />
+      <tableRow />
+      <tableRow />
     </table>
   </div>
 </template>
@@ -61,8 +64,12 @@ export default {
   table {
     margin-top: 1rem;
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+
     tr {
       padding: 1rem 0;
+      border-radius: 3px;
     }
 
     th {
@@ -71,20 +78,31 @@ export default {
       text-align: left;
     }
 
-    td {
+    td, th {
+      border: none;
       padding-top:20px;
       padding-bottom:20px;
       padding-right:20px;   
     }
 
-    td:first-child {
+    td:first-child, th:first-child {
       padding-left:20px;
       padding-right:0;
     }
 
-    &__body {
+    .table__body {
       background-color: white;
     }
 
+    td { border: solid 1px #fff; }
+    tr td:first-child {
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 10px; 
+    }
+    tr td:last-child { 
+      border-top-right-radius: 10px; 
+    }
+    tr td:first-child { border-bottom-left-radius: 10px; }
+    tr td:last-child { border-bottom-right-radius: 10px; }
   }
 </style>

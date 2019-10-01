@@ -27,7 +27,7 @@ export default {
 <style lang="scss">
   .dashboard {
     background-color: #f6f8f8;
-    height: 100vh;
+    // height: 100vh;
     display: grid;
     grid-template-rows: 60px auto;
     grid-template-columns: 60px 1fr;

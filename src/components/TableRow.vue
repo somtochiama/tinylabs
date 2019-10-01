@@ -8,5 +8,8 @@
     <td>josh.bakery@gmail.com</td>
     <td>+234801234567</td>
     <td>Admin</td>
+    <td>
+      <img src="../assets/trash.png" >
+    </td>
   </tr>
 </template>

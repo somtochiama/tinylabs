@@ -12,20 +12,20 @@
           <div class="input__share">
             <div class="input__group half">
               <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="">
+              <input type="text" name="firstName" id="firstName">
             </div>
             <div class="input__group half">
               <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="">
+              <input type="text" name="lastName" id="lastName">
             </div>
           </div>
           <div class="input__group">
             <label for="email">Email</label>
-            <input type="email" name="email" id="">
+            <input type="email" name="email" id="email">
           </div>
           <div class="input__group">
             <label for="password">Password</label>
-            <input type="password" name="password" id="">
+            <input type="password" name="password" id="password">
           </div>
           <MyBtn id="login-btn">Continue</MyBtn>
         </form>
@@ -154,11 +154,11 @@ export default {
         padding: 1rem 1.5rem 2rem;
 
         h3 {
-
+          font-size: 20px
         }
 
         p {
-
+          font-size: 12px;
         }
 
         form {

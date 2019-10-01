@@ -1,14 +1,21 @@
 <template>
   <div class="dashboard__header">
-    <h2 class="heading--primary">Employees</h2>
+    <div class="dashboard__header-top">
+      <h2 class="heading--primary">Employees</h2>
+      <MyBtn>Add New</MyBtn>
+    </div>
+    <div class="dashboard__header-info">
+      <h3 class="heading--secondary">Josh Bakery Ventures</h3>
+      <p class="dashboard__header-address">62, Bode Thomas, Surukere, Lagos</p>
+    </div>
   </div>
 </template>
 
 <script>
-import Button from "../components/Button"
+import MyBtn from "../components/Button"
 export default {
-  component: {
-    Button
+  components: {
+    MyBtn
   }
 }
 </script>
